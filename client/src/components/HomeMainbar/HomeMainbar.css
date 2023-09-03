@@ -1,0 +1,239 @@
+.main-bar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,5);
+    background: linear-gradient(152deg, rgb(0, 5, 7) 0%, rgb(10, 29, 54) 41%, rgb(5, 24, 43) 100%);
+    color: aliceblue;
+}
+.watchlist{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 26, 26);
+    color: aliceblue;
+}
+.dashboard{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 51, 51);
+    color: aliceblue;
+}
+.main-bar h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: cursive;
+    cursor: pointer;
+}
+.main-bar-header{
+    padding-top: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-bar-header form input{
+    min-width: 90%;
+    margin: 0;
+    padding: 8px 10px 8px 42px;
+    font-size: 13px;
+    border: solid 1px #0000003e;
+    border-radius: 3px;
+    outline: none;
+}
+.main-bar-header form{
+    flex-grow: 1;
+    padding: 0px 12px;
+    position: relative;
+    min-width: 90%;
+}
+.search-icon{
+    position: absolute;
+    left: 25px;
+    top: 8px;
+}
+.niftydata{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.nifty{
+    width: 45%;
+    height: 85%;
+    background-color: rgb(30, 30, 31);
+    margin-top: 35px;
+}
+.banknifty{
+    width: 45%;
+    height: 85%;
+    background-color: rgb(30, 30, 31);
+    margin-top: 35px;
+}
+.dashboard h1{
+    font-size: 2.5rem;
+    font-family: cursive;
+}
+.bankniftyval{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 7px 9px 4px 9px;
+}
+.niftyval{
+    padding: 7px 9px 4px 9px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.allniftydata{
+    width: 85rem;
+    height: 40vh;
+    margin-top: 20px;
+}
+.boxand{
+    margin-top: 10px;
+}
+.boxes{
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85rem;
+    overflow: hidden;
+}
+/* .boxes::-webkit-scrollbar {
+    display: none;
+}
+.boxes {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
+.box{
+    height: 80%;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 10px #888888;
+}
+.watchlistdata{
+    background-color: rgb(49, 51, 53);
+    width: 90%;
+    height: 80vh;
+    margin-top: 20px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+.watchlistdata::-webkit-scrollbar {
+    display: none;
+}
+.namewatch{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 30px;
+    align-items: center;
+    
+}
+.namewatch h3{
+    font-size: 2rem;
+}
+#sortvalues{
+    width: 200px;
+    height: 1.7rem;
+    outline: none;
+    border-radius: 5px;
+}
+.subhed{
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
+.subhedmini{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: 16.66%;
+    justify-content: center;
+}
+.footer{
+    background:#333;
+    text-transform: capitalize;
+    width: 100%;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.footer .box-container .boxe{
+    padding:1rem 0;
+    flex:1 1 25rem;
+    margin-left: 30px;
+}
+.footer .box-container .boxe h3{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#fff;
+}
+.footer .box-container .boxe p{
+    font-size: 1rem;
+    padding:.7rem 0;
+    color:#eee;
+}
+.footer .box-container .boxe .an{
+    display: block;
+    font-size: 1rem;
+    padding:.7rem 0;
+    color:#eee;
+    text-decoration: none;
+}
+.footer .box-container .boxe .an:hover{
+    color:orange;
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    padding:1rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+}
+.footer .credit span{
+    color:orange;
+}
+@media (max-width:450px){
+    .boxes{
+        /* overflow: scroll; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* height: 100%; */
+    }
+    /* .box{
+        height: 100rem;
+    } */
+    
+}
